@@ -19,7 +19,7 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
        'Sharjah', 'Mohali', 'Bengaluru']
 
 pipe = pickle.load(open('pipe.pkl','rb'))
-st.title('IPL Win Predictor')
+st.title('TATA IPL win Predictor')
 
 col1, col2 = st.columns(2)
 
@@ -41,7 +41,7 @@ with col4:
 with col5:
     wickets = st.number_input('Wickets out')
 
-if st.button('Predict Probability'):
+if st.button('Predict Now'):
     runs_left = target - score
     balls_left = 120 - (overs*6)
     wickets = 10 - wickets
